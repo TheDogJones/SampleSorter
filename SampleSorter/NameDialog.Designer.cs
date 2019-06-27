@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NameDialog));
             this.lEnter = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.bOkay = new System.Windows.Forms.Button();
@@ -63,7 +64,7 @@
             this.bOkay.UseVisualStyleBackColor = true;
             // 
             // bCancel
-            //
+            // 
             this.bCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.bCancel.Location = new System.Drawing.Point(410, 47);
             this.bCancel.Name = "bCancel";
@@ -84,6 +85,7 @@
             this.Controls.Add(this.bOkay);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.lEnter);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NameDialog";
             this.Text = "Custom Field";
             this.ResumeLayout(false);

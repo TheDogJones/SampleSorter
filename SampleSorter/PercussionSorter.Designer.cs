@@ -23,6 +23,7 @@
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PercussionSorter));
             this.selectDirectory = new System.Windows.Forms.Button();
             this.tbDirectory = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
@@ -92,44 +93,9 @@
             this.label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(219, 31);
+            this.label.TabIndex = 34;
             this.label.Text = "This sample is....";
             this.label.Visible = false;
-            // 
-            // bPlaySample
-            // 
-            this.bPlaySample.Location = new System.Drawing.Point(52, 73);
-            this.bPlaySample.Margin = new System.Windows.Forms.Padding(2);
-            this.bPlaySample.Name = "bPlaySample";
-            this.bPlaySample.Size = new System.Drawing.Size(221, 43);
-            this.bPlaySample.TabIndex = 2;
-            this.bPlaySample.UseVisualStyleBackColor = true;
-            this.bPlaySample.Visible = false;
-            this.bPlaySample.Click += new System.EventHandler(this.bPlaySample_Click);
-            // 
-            // bSkip
-            // 
-            this.bSkip.Location = new System.Drawing.Point(298, 75);
-            this.bSkip.Margin = new System.Windows.Forms.Padding(2);
-            this.bSkip.Name = "bSkip";
-            this.bSkip.Size = new System.Drawing.Size(123, 39);
-            this.bSkip.TabIndex = 3;
-            this.bSkip.Text = "Skip";
-            this.bSkip.UseVisualStyleBackColor = true;
-            this.bSkip.Visible = false;
-            this.bSkip.Click += new System.EventHandler(this.bSkip_Click);
-            // 
-            // bGarbage
-            // 
-            this.bGarbage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bGarbage.Location = new System.Drawing.Point(449, 74);
-            this.bGarbage.Margin = new System.Windows.Forms.Padding(2);
-            this.bGarbage.Name = "bGarbage";
-            this.bGarbage.Size = new System.Drawing.Size(123, 39);
-            this.bGarbage.TabIndex = 4;
-            this.bGarbage.Text = "GARBAGE";
-            this.bGarbage.UseVisualStyleBackColor = true;
-            this.bGarbage.Visible = false;
-            this.bGarbage.Click += new System.EventHandler(this.bGarbage_Click);
             // 
             // bBigKick
             // 
@@ -142,6 +108,17 @@
             this.bBigKick.UseVisualStyleBackColor = true;
             this.bBigKick.Visible = false;
             this.bBigKick.MouseUp += new System.Windows.Forms.MouseEventHandler(this.custom_Click);
+            // 
+            // bPlaySample
+            // 
+            this.bPlaySample.Location = new System.Drawing.Point(52, 73);
+            this.bPlaySample.Margin = new System.Windows.Forms.Padding(2);
+            this.bPlaySample.Name = "bPlaySample";
+            this.bPlaySample.Size = new System.Drawing.Size(221, 43);
+            this.bPlaySample.TabIndex = 2;
+            this.bPlaySample.UseVisualStyleBackColor = true;
+            this.bPlaySample.Visible = false;
+            this.bPlaySample.Click += new System.EventHandler(this.bPlaySample_Click);
             // 
             // bLittleSnare
             // 
@@ -275,6 +252,19 @@
             this.bOther.Visible = false;
             this.bOther.MouseUp += new System.Windows.Forms.MouseEventHandler(this.custom_Click);
             // 
+            // bGarbage
+            // 
+            this.bGarbage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bGarbage.Location = new System.Drawing.Point(449, 74);
+            this.bGarbage.Margin = new System.Windows.Forms.Padding(2);
+            this.bGarbage.Name = "bGarbage";
+            this.bGarbage.Size = new System.Drawing.Size(123, 39);
+            this.bGarbage.TabIndex = 4;
+            this.bGarbage.Text = "GARBAGE";
+            this.bGarbage.UseVisualStyleBackColor = true;
+            this.bGarbage.Visible = false;
+            this.bGarbage.Click += new System.EventHandler(this.bGarbage_Click);
+            // 
             // bClap
             // 
             this.bClap.Location = new System.Drawing.Point(242, 283);
@@ -286,6 +276,18 @@
             this.bClap.UseVisualStyleBackColor = true;
             this.bClap.Visible = false;
             this.bClap.MouseUp += new System.Windows.Forms.MouseEventHandler(this.custom_Click);
+            // 
+            // bSkip
+            // 
+            this.bSkip.Location = new System.Drawing.Point(298, 75);
+            this.bSkip.Margin = new System.Windows.Forms.Padding(2);
+            this.bSkip.Name = "bSkip";
+            this.bSkip.Size = new System.Drawing.Size(123, 39);
+            this.bSkip.TabIndex = 3;
+            this.bSkip.Text = "Skip";
+            this.bSkip.UseVisualStyleBackColor = true;
+            this.bSkip.Visible = false;
+            this.bSkip.Click += new System.EventHandler(this.bSkip_Click);
             // 
             // rbMove
             // 
@@ -554,9 +556,10 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.tbDirectory);
             this.Controls.Add(this.selectDirectory);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PercussionSorter";
-            this.Text = "Percussion Sorter";
+            this.Text = "SampleSorter";
             this.gbFileAction.ResumeLayout(false);
             this.gbFileAction.PerformLayout();
             this.ResumeLayout(false);
