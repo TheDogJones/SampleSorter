@@ -1,7 +1,7 @@
 # SampleSorter
 A small Windows app for easily organizing audio samples in bulk.
 
-Download here: https://drive.google.com/file/d/1AOaaL7PKJFexbU1fqyN8udDc4gscYyKC/view?usp=sharing
+Download here: https://drive.google.com/file/d/1AOaaL7PKJFexbU1fqyN8udDc4gscYyKC/view
 
 Instructions:
 
